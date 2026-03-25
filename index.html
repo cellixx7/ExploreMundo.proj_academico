@@ -100,20 +100,51 @@
     </div>
   </section>
 
-  <!-- Contato -->
+   <!-- Contato -->
   <section class="contact-section" id="contato">
-    <div class="container">
-      <div class="container-Forms"><h3>Fale Conosco</h3>
-      <input type="text" placeholder="Nome" required>
-      <input type="email" placeholder="E-mail" required>
-      <input type="text-area" placeholder="Mensagem" required>
+  <div class="container contact-wrapper">
+    
+    <div class="container-forms">
+      <div class="title-line">
+        <h3>Fale Conosco</h3>
+        <span class="line3"></span>
       </div>
 
-      <div class="container-where">
+      <form class="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea id="message" name="message" placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
 
+    <div class="container-where">
+      <div class="title-line">
+        <h3>Onde Estamos</h3>
+        <span class="line3"></span>
+      </div>
+
+      <img src="src/localexploreMundo.png" alt="Mapa de localização" class="map-img">
+
+      <div class="contact-info">
+        <div class="info-item">
+          <ion-icon name="mail"></ion-icon>
+          <span><strong>email:</strong> contato@exploremundo.com</span>
+        </div>
+
+        <div class="info-item">
+          <ion-icon name="call"></ion-icon>
+          <span>(11) 1234-5678</span>
+        </div>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2024 <strong>ExploreMundo</strong> - Todos os direitos reservados</p>
+</footer>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

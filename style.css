@@ -3,6 +3,10 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f5f7fa;
   padding-top: 80px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-container {
@@ -248,4 +252,132 @@ body {
 
 .contact-section {
   background: #d6e8ec;
+  padding: 80px 24px;
+}
+
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.container-forms,
+.container-where {
+  background: transparent;
+  padding: 28px;
+}
+
+.title-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.container-forms h3,
+.container-where h3 {
+  margin: 0;
+  color: #163b6c;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.line3 {
+  display: block;
+  flex: 1;
+  height: 2px;
+  background: #b7c7cc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-enviar {
+  border: none;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #2f95fb, #1471cd) !important;
+  color: white;
+  padding: 12px 12px !important;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.105);
+  width: 140px;
+  align-self: center;
+}
+
+.btn-enviar:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.map-img {
+  width: 100%;
+  max-width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border: 1px solid #cfcfcf;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #163b6c;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7d6db;
+}
+
+.info-item ion-icon {
+  font-size: 24px;
+  color: #163b6c;
+}
+
+.footer {
+  background: linear-gradient(to right, #1e74bb, #125ea0);
+  color: white;
+  text-align: center;
+  padding: 18px 24px;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
 }
